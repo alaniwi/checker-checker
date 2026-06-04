@@ -1,11 +1,8 @@
 #!/bin/sh
 
-url=https://gws-access.jasmin.ac.uk/public/mohc_shared/msmizielinski/MIP-DRS7/CMIP7/CMIP/MOHC/DUMMY-MODEL/1pctCO2/r1i1p1f3/glb/mon/tas/tavg-h2m-hxy-u/g999/v20260401/tas_tavg-h2m-hxy-u_mon_glb_g999_DUMMY-MODEL_1pctCO2_r1i1p1f3_185001-199912.nc
-user=matt
+. ./paths.sh
 
-good_data_dir=testdata/orig
-warn_data_dir=testdata/warn
-fail_data_dir=testdata/fail
+user=matt
 
 for util in wget ncatted
 do
@@ -18,10 +15,6 @@ for dir in $good_data_dir $warn_data_dir $fail_data_dir
 do
     [ -d $dir ] || mkdir -p $dir
 done
-
-good_path=$good_data_dir/$fname
-warn_path=$warn_data_dir/$fname
-fail_path=$fail_data_dir/$fname
 
 if [ ! -e $good_path ]
 then

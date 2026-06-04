@@ -1,0 +1,166 @@
+================= good ===============
+RET=False ERRS=False
+
+
+--------------------------------------------------------------------------------
+                         IOOS Compliance Checker Report                         
+                                 Version 6.1.0                                  
+                     Report generated 2026-06-04T08:49:15Z                      
+                                 wcrp_cmip7:1.0                                 
+                                                                                
+--------------------------------------------------------------------------------
+                               Corrective Actions                               
+tas_tavg-h2m-hxy-u_mon_glb_g999_DUMMY-MODEL_1pctCO2_r1i1p1f3_185001-199912.nc has 7 potential issues
+
+
+                                   Mandatory                                    
+--------------------------------------------------------------------------------
+[FILE001] DRS Directory Vocabulary Check
+* DRS project root 'cmip7' not found in the file path 'testdata/orig/tas_tavg-h2m-hxy-u_mon_glb_g999_DUMMY-MODEL_1pctCO2_r1i1p1f3_185001-199912.nc'.
+
+[FILE004a] CMIP7 internal packing : Consolidated internal metadata
+* File does not have consolidated internal metadata. Run 'cmip7repack' to fix this.
+
+[FILE004b] CMIP7 internal packing : Time coordinate chunking
+* Time coordinate variable 'time' has 4 chunks (expected 1 chunk or contiguous). Run 'cmip7repack' to fix this.
+
+[FILE004c] CMIP7 internal packing : Time bounds chunking ('time_bnds')
+* Time bounds variable 'time_bnds' has 4 chunks (expected 1 chunk or contiguous). Run 'cmip7repack' to fix this.
+
+[FILE004d] CMIP7 internal packing : Data variable chunking ('tas')
+* Data variable 'tas': uncompressed chunk size 110592 B (expected at least 4083712 B, or 1 chunk, or contiguous). Run 'cmip7repack' to fix this.
+
+[PATH001] Consistency: Directory Structure vs Global Attributes
+* Could not perform check. Reason: Directory path does not contain drs_specs 'MIP-DRS7'.
+
+[PATH002] Consistency: Directory Structure vs Filename
+* Could not perform check. Reason: Directory path does not contain drs_specs 'MIP-DRS7'.
+
+
+--------------------------------------------------------------------------------
+                         IOOS Compliance Checker Report                         
+                                 Version 6.1.0                                  
+                     Report generated 2026-06-04T08:49:15Z                      
+                                    cf:1.11                                     
+http://cfconventions.org/Data/cf-conventions/cf-conventions-1.11/cf-conventions.html
+--------------------------------------------------------------------------------
+All tests passed!
+
+=======================================
+
+
+================= warn ===============
+RET=False ERRS=True
+
+
+--------------------------------------------------------------------------------
+                         IOOS Compliance Checker Report                         
+                                 Version 6.1.0                                  
+                     Report generated 2026-06-04T08:49:16Z                      
+                                 wcrp_cmip7:1.0                                 
+                                                                                
+--------------------------------------------------------------------------------
+                               Corrective Actions                               
+tas_tavg-h2m-hxy-u_mon_glb_g999_DUMMY-MODEL_1pctCO2_r1i1p1f3_185001-199912.nc has 7 potential issues
+
+
+                                   Mandatory                                    
+--------------------------------------------------------------------------------
+[FILE001] DRS Directory Vocabulary Check
+* DRS project root 'cmip7' not found in the file path 'testdata/warn/tas_tavg-h2m-hxy-u_mon_glb_g999_DUMMY-MODEL_1pctCO2_r1i1p1f3_185001-199912.nc'.
+
+[FILE004a] CMIP7 internal packing : Consolidated internal metadata
+* File does not have consolidated internal metadata. Run 'cmip7repack' to fix this.
+
+[FILE004b] CMIP7 internal packing : Time coordinate chunking
+* Time coordinate variable 'time' has 4 chunks (expected 1 chunk or contiguous). Run 'cmip7repack' to fix this.
+
+[FILE004c] CMIP7 internal packing : Time bounds chunking ('time_bnds')
+* Time bounds variable 'time_bnds' has 4 chunks (expected 1 chunk or contiguous). Run 'cmip7repack' to fix this.
+
+[FILE004d] CMIP7 internal packing : Data variable chunking ('tas')
+* Data variable 'tas': uncompressed chunk size 110592 B (expected at least 4083712 B, or 1 chunk, or contiguous). Run 'cmip7repack' to fix this.
+
+[PATH001] Consistency: Directory Structure vs Global Attributes
+* Could not perform check. Reason: Directory path does not contain drs_specs 'MIP-DRS7'.
+
+[PATH002] Consistency: Directory Structure vs Filename
+* Could not perform check. Reason: Directory path does not contain drs_specs 'MIP-DRS7'.
+
+
+--------------------------------------------------------------------------------
+                         IOOS Compliance Checker Report                         
+                                 Version 6.1.0                                  
+                     Report generated 2026-06-04T08:49:16Z                      
+                                    cf:1.11                                     
+http://cfconventions.org/Data/cf-conventions/cf-conventions-1.11/cf-conventions.html
+--------------------------------------------------------------------------------
+                               Corrective Actions                               
+tas_tavg-h2m-hxy-u_mon_glb_g999_DUMMY-MODEL_1pctCO2_r1i1p1f3_185001-199912.nc has 1 potential issue
+
+
+                                     Errors                                     
+--------------------------------------------------------------------------------
+§4.4 Time Coordinate
+* For nonstandard calendar on variable time, attribute month_lengths must be supplied as a 12-element integer array
+
+=======================================
+
+
+================= fail ===============
+RET=False ERRS=False
+
+
+--------------------------------------------------------------------------------
+                         IOOS Compliance Checker Report                         
+                                 Version 6.1.0                                  
+                     Report generated 2026-06-04T08:49:16Z                      
+                                 wcrp_cmip7:1.0                                 
+                                                                                
+--------------------------------------------------------------------------------
+                               Corrective Actions                               
+tas_tavg-h2m-hxy-u_mon_glb_g999_DUMMY-MODEL_1pctCO2_r1i1p1f3_185001-199912.nc has 9 potential issues
+
+
+                                   Mandatory                                    
+--------------------------------------------------------------------------------
+[ATTR004] Global attribute 'experiment_id' vocabulary check
+* Invalid value(s) ['JUNK'] for CV collection 'experiment'.
+
+[ATTR005] Consistency: Filename vs Global Attributes
+* Filename component 'experiment_id' ('1pctCO2') does not match global attribute ('JUNK').
+
+[FILE001] DRS Directory Vocabulary Check
+* DRS project root 'cmip7' not found in the file path 'testdata/fail/tas_tavg-h2m-hxy-u_mon_glb_g999_DUMMY-MODEL_1pctCO2_r1i1p1f3_185001-199912.nc'.
+
+[FILE004a] CMIP7 internal packing : Consolidated internal metadata
+* File does not have consolidated internal metadata. Run 'cmip7repack' to fix this.
+
+[FILE004b] CMIP7 internal packing : Time coordinate chunking
+* Time coordinate variable 'time' has 4 chunks (expected 1 chunk or contiguous). Run 'cmip7repack' to fix this.
+
+[FILE004c] CMIP7 internal packing : Time bounds chunking ('time_bnds')
+* Time bounds variable 'time_bnds' has 4 chunks (expected 1 chunk or contiguous). Run 'cmip7repack' to fix this.
+
+[FILE004d] CMIP7 internal packing : Data variable chunking ('tas')
+* Data variable 'tas': uncompressed chunk size 110592 B (expected at least 4083712 B, or 1 chunk, or contiguous). Run 'cmip7repack' to fix this.
+
+[PATH001] Consistency: Directory Structure vs Global Attributes
+* Could not perform check. Reason: Directory path does not contain drs_specs 'MIP-DRS7'.
+
+[PATH002] Consistency: Directory Structure vs Filename
+* Could not perform check. Reason: Directory path does not contain drs_specs 'MIP-DRS7'.
+
+
+--------------------------------------------------------------------------------
+                         IOOS Compliance Checker Report                         
+                                 Version 6.1.0                                  
+                     Report generated 2026-06-04T08:49:16Z                      
+                                    cf:1.11                                     
+http://cfconventions.org/Data/cf-conventions/cf-conventions-1.11/cf-conventions.html
+--------------------------------------------------------------------------------
+All tests passed!
+
+=======================================
+
+
