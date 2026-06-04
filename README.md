@@ -1,6 +1,6 @@
 Runs the compliance checker with a CMIP7 file that ought to be valid, using the checks that will be run in the ESGF publisher.
 
-Three versions of the file are included:
+Three versions of the file are included (via download from JASMIN):
   - "good": the original test file supplied by MOHC
   - "warn": the file with the attribute `calendar` of variable `time` changed to `"JUNK"`
   - "fail": the file with the global attribute `experiment_id` changed to `"JUNK"`
