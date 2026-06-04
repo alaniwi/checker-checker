@@ -4,11 +4,15 @@ fname=tas_tavg-h2m-hxy-u_mon_glb_g999_DUMMY-MODEL_1pctCO2_r1i1p1f3_185001-199912
 urlbase=https://gws-access.jasmin.ac.uk/public/mohc_shared/msmizielinski/
 url=$urlbase/$drsdirs/$fname
 
+# the fail case has an unrecognised experiment ID, but make it consistent
+# with the path / filename
+fail_subst='s/1pctCO2/JUNK/'
+
 good_data_dir=testdata/orig/$drsdirs
 warn_data_dir=testdata/warn/$drsdirs
-fail_data_dir=testdata/fail/$drsdirs
+fail_data_dir=testdata/fail/$(echo $drsdirs | sed "$fail_subst")
 
 good_path=$good_data_dir/$fname
 warn_path=$warn_data_dir/$fname
-fail_path=$fail_data_dir/$fname
+fail_path=$fail_data_dir/$(echo $fname | sed "$fail_subst")
 
