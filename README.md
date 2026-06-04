@@ -16,6 +16,7 @@ It is hoped that `return_value` will be `True` for the "good" and "warn" files, 
 At present time (2026-06-04), this is _not_ the case.  A copy of the output is included in the repo.  (File `output_2026-06-04.txt`.)
 
 ## To run
+Ensure that you have `wget` and `ncatted` in your `PATH`, and then:
 ```
 git clone https://github.com/alaniwi/checker-checker.git
 cd checker-checker
