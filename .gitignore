@@ -1,0 +1,5 @@
+checker.out
+*~
+venv
+testdata
+scratch
